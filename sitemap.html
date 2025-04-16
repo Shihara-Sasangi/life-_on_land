@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="stylesheet" href="sitemap1.css"> 
+  <link rel="stylesheet" href="styles.css"><!-- Link to the Global CSS file -->
+</head>
+<body>
+  <header>
+		<nav> <!-- navigation bar -->
+			<a href="home.html" class="logo"> <!-- Logo on the left side-->
+				<img src="images/logo.png" alt="Life on Land Logo">
+			</a>
+
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="voluteer.html">Volunteer</a></li>
+				<li><a href="table.html">Data</a></li>
+				<li><a href="profile.html">User Profile</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="sitemap" class="active">Sitemap</a></li>
+				<li><a href="team">Team</a></li>
+			</ul>
+
+			<a href="contact.html" class="contact-button green-button">Contact Us</a> <!-- Contact button next to the profile icon -->
+			<a href="profile.html" class="profile-icon"> <!-- Profile icon on the right side -->
+				<img src="images/profile-icon.png" alt="User Profile">
+			</a>
+
+		</nav>
+	</header>
+
+ <main class="sitemap-container">
+    <!-- Glass Container for the Sitemap -->
+    <div class="glass-container">
+      <h1>Sitemap</h1>
+      <svg class="sitemap-svg" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Home Node -->
+        <a href="home.html">
+          <rect class="node" x="40" y="150" width="120" height="50" rx="10" ry="10" fill="#B0BEC5" />
+          <text class="node-text" x="95" y="180" text-anchor="middle">Home</text>
+        </a>
+
+        <!-- Main Pages -->
+        <a href="volunteer.html">
+          <rect class="node" x="180" y="150" width="120" height="50" rx="10" ry="10" fill="#CFD8DC" />
+          <text class="node-text" x="235" y="180" text-anchor="middle">Volunteer</text>
+        </a>
+
+        <a href="table.html">
+          <rect class="node" x="320" y="150" width="120" height="50" rx="10" ry="10" fill="#CFD8DC" />
+          <text class="node-text" x="375" y="180" text-anchor="middle">Table</text>
+        </a>
+
+        <a href="profile.html">
+          <rect class="node" x="460" y="150" width="120" height="50" rx="10" ry="10" fill="#CFD8DC" />
+          <text class="node-text" x="517" y="180" text-anchor="middle">Profile</text>
+        </a>
+
+        <a href="feedback.html">
+          <rect class="node" x="600" y="150" width="120" height="50" rx="10" ry="10" fill="#CFD8DC" />
+          <text class="node-text" x="655" y="180" text-anchor="middle">Feedback</text>
+        </a>
+
+        <a href="about.html">
+          <rect class="node" x="740" y="150" width="120" height="50" rx="10" ry="10" fill="#CFD8DC" />
+          <text class="node-text" x="795" y="180" text-anchor="middle">About Us</text>
+        </a>
+
+        <!-- Sub-pages under "About Us" -->
+        <a href="vishma.html">
+          <rect class="node" x="860" y="250"  width="120" height="50" rx="10" ry="10" fill="#ECEFF1" />
+          <text class="node-text" x="910" y="280" text-anchor="middle">Thivina</text>
+        </a>
+
+        <a href="daniru.html">
+          <rect class="node" x="860" y="320" width="120" height="50" rx="10" ry="10" fill="#ECEFF1" />
+          <text class="node-text" x="910" y="350" text-anchor="middle">Punsara</text>
+        </a>
+
+        <a href="disath.html">
+          <rect class="node" x="860" y="390" width="120" height="50" rx="10" ry="10" fill="#ECEFF1" />
+          <text class="node-text" x="910" y="420" text-anchor="middle">Puleesha</text>
+        </a>
+
+        <a href="lakidhu.html">
+          <rect class="node" x="860" y="460" width="120" height="50" rx="10" ry="10" fill="#ECEFF1" />
+          <text class="node-text" x="910" y="490" text-anchor="middle">Shihara</text>
+        </a>
+
+        <!-- Connecting Lines -->
+        <line x1="95" y1="110" x2="795" y2="110" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="95" y1="110" x2="95" y2="150" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="235" y1="110" x2="235" y2="150" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="375" y1="110" x2="375" y2="150" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="515" y1="110" x2="515" y2="150" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="655" y1="110" x2="655" y2="150" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="795" y1="110" x2="795" y2="150" stroke="#B0BEC5" stroke-width="2" />
+
+        <!-- About Us Connections -->
+        <line x1="795" y1="200" x2="795" y2="490" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="795" y1="275" x2="860" y2="275" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="795" y1="350" x2="860" y2="350" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="795" y1="415" x2="860" y2="415" stroke="#B0BEC5" stroke-width="2" />
+        <line x1="795" y1="490" x2="860" y2="490" stroke="#B0BEC5" stroke-width="2" />
+      </svg>
+    </div>
+  </main>
+
+	<!-- Footer-->
+	<footer>
+		<p>© 2025 Life on Land | <a href="pageEditor_ST2.html">Page Editor</a></p>
+	</footer>
+</body>
+</html>

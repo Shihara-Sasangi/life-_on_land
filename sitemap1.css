@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+  }
+/* Background Image */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: url("Images/Background-leaf.jpg"); /* Replace with your image path */
+    background-size: cover; /* Covers the full viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Makes the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents repeating */
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* Default text color */
+}
+
+/* Glass Container */
+.glass-container {
+    background: rgba(65, 127, 67, 0.544); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    border-radius: 15px; /* Rounded corners */
+    border: 3px solid rgba(254, 254, 253, 0.842); /* Light border for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Add some padding */
+    max-width: 60%; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+    margin-top: 30px;
+}
+
+/* Sitemap SVG */
+.sitemap-svg {
+    max-width: 100%;
+    height: auto;
+    background-color: rgba(1, 27, 6, 0.834); /* Semi-transparent white background */
+    border-radius: 30px; /* Rounded corners for the SVG container */
+    padding: 5px; /* Add some padding around the SVG */
+    border: 3px solid rgba(20, 88, 22, 0.822);
+}
+
+/* Node Styling */
+.node {
+    cursor: pointer;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.node:hover {
+    fill: #bbeec2ac; /* Change color on hover */
+    stroke: #000; /* Add border on hover */
+}
+
+.node-text {
+    font-size: 20px;
+    font-weight: bold;
+    fill: #050505;
+    pointer-events: none; /* Ensure text is not interactive */
+}
+  
+/*  header {
+    background-color: #333;
+    color: #339a2a;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }*/
+  
+  main {
+    padding: 20px;
+  }
+  
+/*  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }*/

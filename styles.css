@@ -1,0 +1,398 @@
+/* Defining custom font: Nunito */
+@font-face {
+	font-family: 'Nunito'; /* Name of the font */
+	src: url('fonts/static/Nunito-Light.woff2') format('woff2'), /* Font path and format */
+		 url('fonts/static/Nunito-Light.ttf') format('truetype');
+	font-weight: Normal; /* Normal version of the font */
+} 
+
+/* Defining the bold version of the Nunito font */
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/static/Nunito-Bold.woff2') format('woff2'),
+         url('fonts/static/Nunito-Bold.ttf') format('truetype'); 
+    font-weight: bold; /* Bold version of the font */
+}
+
+/* Resetting the default styles */
+body, ul{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', 'Helvetica'; /* Nunito will be the primary font. Helvetica will be the fallback font */
+}
+
+.background{
+    background-color: #9ce6aefa
+}
+
+/* Navigation bar */
+nav {
+	background-color: white; /* Green background */
+	padding: 20px;
+	display: flex; /* Using a flexbox to arrange elements horizontally */
+	align-items: center; /* Vertically aligns items in the center */
+	justify-content: space-between; /* Aligns the logo and profile icon to the left and right */
+}
+
+/* Removing bullet points and aligning nav bar elements */
+nav ul{
+	list-style: none; /* Remove default bullet points */
+	display: flex; /* Aligns list items horizontally */
+	gap: 25px; /* Adds 20px space between each link */
+	margin: 0; /* Removes default margin */
+	padding: 0; /* Removes default padding */
+	flex: 1; /* Makes the list items take up the remaining space between the logo and profile icon */
+	justify-content: center; /* Aligns the list items in the center */
+}
+
+/* styling nav bar links */
+nav a{
+	color: black; 
+	text-decoration: none; /* Removes underline */
+	font-weight: bold; /* Makes the text bold */
+	padding: 12px 18px; /* Expand the clickable area */
+	border-radius: 5px; /* Adds rounded corners */
+	transition: 0.3s ease; /* Smooth transition effect */
+}
+
+/* Current Page Highlight */
+nav a.active{
+	background-color: #F5F5F5; /* Light grey background */
+    border-radius: 50px; 
+    padding: 10px 16px; 
+}
+
+/* Hover effect */
+nav a:hover{
+	background-color: #F0F0F0; /* Adds a light grey background on hover */
+	border-radius: 50px; /* Adds rounded corners */
+}
+
+/* Logo */
+.logo {
+    height: 20px; /* Sets the height of the logo */
+    display: flex; /* Makes the logo container a flexbox */
+	align-items: center; /* Vertically centers the logo image inside the container */
+}
+
+.logo img{
+	height: 40px; /* Sets the height of the logo */
+	width:auto; /* Allows the width to adjust automatically so the image doesn't stretch */
+	object-fit: contain; /* Ensures the image fits inside the container */
+	pointer-events: none; /* Disables pointer events on the logo image */
+}
+
+.logo:hover{
+	background-color: transparent; /* Make the logo not get highlighted on hover */
+}
+
+/* Profile Icon */
+.profile-icon {
+	width: 20px; /* Sets the width of the profile icon */
+	height: 20px; /* Sets the height of the profile icon */
+	border-radius: 50%; /* Makes the icon circular */
+	overflow: hidden; /* Hides the overflow */
+	display: flex; /* Makes the profile icon container a flexbox */
+	align-items: center; /* Vertically centers the icon inside the container */
+	justify-content: center; /* Horizontally centers the icon inside the container */
+}
+
+.profile-icon img{
+	width: 100%; /* Sets the width of the profile icon image */
+	height: 100%; /* Sets the height of the profile icon image */
+	object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Home Image */
+.hero {
+    background-image: url('images/background-image.png'); /* Add a nice background image */
+    background-size: cover;
+    background-position: center top -175px; /* Lifts the image up by 50px */
+    height: 600px;
+    display: flex;
+    align-items: flex-start; /* Aligns the content to the top */
+    justify-content: flex-start; /* Aligns the content to the left */
+    color: white;
+    padding: 20px;
+	position: relative;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3); /* Light dark effect */
+	z-index: 0; /* Keep it behind everything */
+}
+
+/* Make sure text and buttons stay on top */
+.hero-content {
+	position: relative;
+	z-index: 1;
+}
+
+/* Heading */
+.hero h1 span {
+    font-size: 60px; 
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px; /* Adds indent */
+	background: linear-gradient(to top, dimgrey 3%, white 50%); /* Creating a shading gradient background */
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Subtext */
+.hero-subtext {
+    font-size: 30px;
+    font-weight: semi-bold;
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+	background-color: #079958; 
+	margin-left: 20px;
+}
+
+/* Cta button and contact button styles */
+.cta-button, .contact-button {
+    display: inline-block;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px; /* Circular border */
+    transition: 0.2s ease-in-out;
+	margin-right: 20px; /* Adds space between buttons */
+}
+
+.cta-button:hover, .contact-button:hover {
+    transform: scale(0.95); /* Shrinks slightly */
+}
+
+/* white Contact Us button */
+.white-button {
+	background-color: white;
+	color: black;
+}
+
+/* Green Contact Us button */
+.green-button {
+	background-color: #079958;
+	color: white;
+	margin-right: 20px; /* Move button away from profile pic */
+}
+
+.green-button:hover {
+    background-color: #079958;
+    transform: scale(0.95);
+}
+
+.mission {
+	text-align: center;
+	padding: 50px;
+}
+
+.mission h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.mission p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+	margin-top: -25px; /* Move text closer */
+}
+
+/* Tile Grid */
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 50px;
+    max-width: 100%; /* Prevents overflow */
+    overflow: hidden; /* Hides overflow */
+    text-align: left; /* Aligns text inside tiles to the left */
+    margin-top: -40px;
+}
+
+.tile {
+    height: 300px;
+}
+
+.tile.pic {
+    height: 350px;
+}
+
+/* Image Tiles */
+.tile.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text Tiles */
+.tile.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* left aligns text */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+.tile.text h3 {
+    font-size: 24px;
+    font-weight: bold;
+	margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px; 
+}
+
+.tile.text p {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.tile.text a{
+    align-self: flex-start; /* Move to left */
+    margin-top: 10px;
+}
+
+/* Background Colors */
+.white-text {
+    background-color: white;
+    color: black;
+    border: 1px solid #cfcfcf;
+}
+
+.light-green-text {
+    background-color: #ecffd1;
+    color: black;
+    border: 1px solid #cccccc;
+}
+
+.dark-green-text {
+    background-color: #079958;
+    color: white;
+    border: 1px solid #06884f;
+}
+
+.learn-more1, .learn-more2, .learn-more4{
+    color: #079958;
+}
+
+.learn-more3{
+    color: white;
+}
+
+/* Learn More Button */
+.tile.text a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tile.text a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effect */
+.tile:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e0e0e0;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer Links */
+footer a {
+    color: #079958; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Table Section */
+.table-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.table-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.table-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 10px auto 30px auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Head */
+thead {
+    background-color: #079958;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Table Body */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: rgba(7, 153, 88, 0.1);
+    transition: 0.3s ease;
+}
+
+/* Table Data */
+td {
+    padding: 12px;
+}

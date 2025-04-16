@@ -1,0 +1,288 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url("Images/lake-8231248_1280.jpg") no-repeat;
+    color: #2e7d32;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #c8e6c9;
+}
+
+/* Profile Container */
+/* Profile-Specific Styling */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin-top: 100px; /* Adjusted for fixed header */
+    justify-content: center;
+}
+
+.content-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.section {
+    flex: 1 1 calc(50% - 20px);
+    background: #f5fff0;
+    border: 2px solid #88b04b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Smaller Profile Photo */
+.avatar {
+    width: 100px; /* Reduced size */
+    height: 100px; /* Reduced size */
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.4); /* Optional hover effect */
+}
+
+/* Specific Styles for Profile Page */
+.about-me {
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #d4e8c2;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #4c8c4a;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #4c8c4a;
+}
+
+
+/* Section Styling */
+.section {
+    flex: 1 1 calc(50% - 20px);
+    background: #f5fff0;
+    border: 2px solid #88b04b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+    text-align: center;
+}
+
+
+.skill {
+    margin-bottom: 15px;
+}
+
+    
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #d4e8c2;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.progress {
+    height: 100%;
+    background: #4c8c4a;
+    border-radius: 5px;
+}
+
+
+/* Calendar Styling */
+.calendar-container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-container h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #c8e6c9;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #66bb6a;
+    color: white;
+}
+
+td {
+    background-color: #f1f8e9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+td:hover {
+    background-color: #a5d6a7;
+}
+
+.available {
+    background-color: #4caf50 !important;
+    color: white;
+}
+
+/* Contact Form Styling */
+.contact h2{
+    color: #edfced;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact input, 
+.contact textarea {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #15632adb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #1878e6;
+}
+
+
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links li a:hover {
+    color: #c8e6c9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    .section {
+        width: 100%;
+    }
+}
+

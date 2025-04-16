@@ -1,0 +1,88 @@
+/* Page Header */
+.content-header {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Body Styling */
+
+.content-header {
+    background-color: #079958; /* Green color */
+    color: white; /* White text for better contrast */
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px; /* Add rounded corners */
+    margin: 20px auto; /* Add some margin */
+    max-width: 1200px; /* Limit the width */
+}
+
+/* Internal Navigation */
+.content-nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.content-nav a {
+    color: #079958;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 18px;
+}
+
+/* Images */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Go to Top Button */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #079958;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.go-top:hover {
+    background: #056c40;
+}
